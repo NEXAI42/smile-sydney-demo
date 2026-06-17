@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smile Sydney Dental — AI Receptionist Demo</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #0a0a0a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  h1 { font-size: 28px; margin-bottom: 10px; }
+  p { color: #aaa; font-size: 16px; max-width: 400px; }
+  .badge {
+    background: #1B4F72;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="badge">LIVE DEMO</div>
+<h1>Smile Sydney Dental</h1>
+<p>Meet Ava — your 24/7 AI dental receptionist. 
+Click the chat button below to see her in action.</p>
+
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '6a31fd0e15d56d7baf9e0d30' },
+          url: 'https://general-runtime.voiceflow.com',
+          voice: {
+            url: "https://runtime-api.voiceflow.com"
+          }
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+      v.type = "text/javascript"; 
+      s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+</html>
